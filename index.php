@@ -1,5 +1,10 @@
 <?php
  
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_log("Tentative de chargement de la page d'accueil...");
+error_reporting(E_ALL);
+
 require_once __DIR__ . '/includes/functions.php';
 require_once __DIR__ . '/includes/db.php';
 
