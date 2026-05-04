@@ -15,7 +15,7 @@ try {
     ]);
 } catch (PDOException $e) { 
     error_log("Erreur de connexion : " . $e->getMessage());
-    die("Désolé, une erreur technique est survenue." . $e->getMessage());
+    die("Désolé, une erreur technique est survenue.");
 }
  
 function getPDO() {
