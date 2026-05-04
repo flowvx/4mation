@@ -26,7 +26,7 @@ if ($offreId > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Candidature - 4Mation</title>
-    <link rel="stylesheet" href="/css/formulaire.css">
+    <link rel="stylesheet" href="css/formulaire.css">
 </head>
 <body>
 <header>
