@@ -1,7 +1,6 @@
-# Configuration BDD
-includes/db.php
+!includes/db.php
 
-# Dossiers d'uploads (très important pour ne pas saturer GitHub)
+# Dossiers d'uploads
 uploads/
 /uploads/cv/
 /uploads/lettres/
