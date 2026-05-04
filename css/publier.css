@@ -1,0 +1,96 @@
+/* Structure de la page */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.offer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* En-tête admin spécifique */
+.admin-header {
+    background: var(--surface);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.admin-header .header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Mise en page en grille */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Champs conditionnels */
+.conditional-field {
+    display: none;
+    margin-top: 15px;
+    padding: 20px;
+    background: rgba(255, 152, 0, 0.03);
+    border-radius: 8px;
+    border: 1px dashed var(--orange);
+}
+
+/* Groupes de boutons radio */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+/* Bouton de soumission */
+.form-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.submit-btn {
+    background: var(--orange);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.submit-btn:hover {
+    background: var(--orange-light);
+    transform: translateY(-2px);
+}
+
+.back-link {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    color: var(--orange);
+}

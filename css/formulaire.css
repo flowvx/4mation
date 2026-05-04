@@ -1,0 +1,134 @@
+/* Thème et Variables */
+:root {
+  --primary-orange: #ff9800;
+  --primary-hover: #e68900;
+  --bg-dark: #0f0f0f;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-main: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+/* Base Layout */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 30px;
+  margin-bottom: 24px;
+}
+
+/* Typography */
+h1,
+h2 {
+  letter-spacing: -0.02em;
+}
+
+.orange-text {
+  color: var(--primary-orange);
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: white;
+  padding: 12px 16px;
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-orange);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Checkbox & Radio Customization */
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background: var(--primary-orange);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Flash Messages */
+.flash-message {
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+.flash-error {
+  background: rgba(229, 57, 53, 0.15);
+  border: 1px solid #e53935;
+  color: #ef9a9a;
+}
+.flash-success {
+  background: rgba(67, 160, 71, 0.15);
+  border: 1px solid #43a047;
+  color: #a5d6a7;
+}

@@ -1,0 +1,11 @@
+# Configuration BDD
+includes/db.php
+
+# Dossiers d'uploads (très important pour ne pas saturer GitHub)
+uploads/
+/uploads/cv/
+/uploads/lettres/
+
+# Fichiers système
+.DS_Store
+Thumbs.db

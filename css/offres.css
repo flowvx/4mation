@@ -1,0 +1,202 @@
+/* ---------- LAYOUT DE RECHERCHE ---------- */
+.search-layout {
+    max-width: 1250px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    padding: 0 24px;
+}
+
+/* ---------- SIDEBAR (FILTRES) ---------- */
+.filters-sidebar {
+    background: var(--surface);
+    border: 1px solid #1e1e1e;
+    border-radius: var(--radius-md);
+    padding: 24px;
+    height: fit-content;
+}
+
+.filter-group {
+    margin-bottom: 32px;
+}
+
+.filter-group h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+}
+
+.custom-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.custom-check input {
+    margin-right: 10px;
+    accent-color: var(--orange);
+}
+
+.custom-check .count {
+    background: var(--surface-3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--text-dim);
+}
+
+.filter-select {
+    width: 100%;
+    background: var(--surface-2);
+    border: 1px solid #333;
+    color: white;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+}
+
+/* ---------- MAIN RESULTS ---------- */
+.search-top-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.search-input-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    color: var(--text-dim);
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+    background: var(--surface-2);
+    border: 1px solid #222;
+    border-radius: 999px;
+    color: white;
+    font-size: 15px;
+}
+
+.search-input-wrapper input:focus {
+    border-color: var(--orange);
+    outline: none;
+}
+
+.results-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ---------- JOB CARDS (HORIZONTAL) ---------- */
+.offers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.job-item {
+    background: var(--surface);
+    border: 1px solid #1e1e1e;
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.job-item:hover {
+    border-color: #333;
+    transform: translateY(-2px);
+}
+
+.job-main-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.job-logo {
+    width: 64px;
+    height: 64px;
+    background: white; /* Fond blanc pour les logos souvent sur fond blanc */
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    object-fit: contain;
+}
+
+.job-text h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.job-sub {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.tag-outline {
+    border: 1px solid #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-right: 6px;
+}
+
+.job-actions {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.time-ago {
+    font-size: 12px;
+    color: var(--text-dim);
+}
+
+.view-btn {
+    background: var(--surface-3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #444;
+}
+
+.view-btn:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .search-layout {
+        grid-template-columns: 1fr;
+    }
+    .filters-sidebar {
+        display: none; /* On cache les filtres sur mobile ou on fait un menu drawer */
+    }
+}

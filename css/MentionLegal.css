@@ -1,0 +1,122 @@
+/* ===========================
+   4MATION — MentionLegal.css
+   Design: Dark / Orange
+   =========================== */
+
+/* ---------- RESET & BASE ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange:       #FF4D00;
+  --orange-light: #FF6B35;
+  --black:        #0A0A0A;
+  --surface:      #141414;
+  --surface-2:    #1C1C1C;
+  --text-primary: #FFFFFF;
+  --text-muted:   #999999;
+  --text-dim:     #555555;
+  --radius-sm:    6px;
+  --radius-md:    12px;
+  --font:         'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+  background-color: var(--black);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid #1e1e1e;
+  padding: 48px 24px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ---------- SECTIONS ---------- */
+main > section {
+  background: var(--surface-2);
+  border: 1px solid #222;
+  border-radius: var(--radius-md);
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main > section h2 {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange-light);
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a2a2a;
+  margin-bottom: 4px;
+}
+
+main > section p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+main > section strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ---------- FOOTER (inside <main>) ---------- */
+main > footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+main > footer p {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  header {
+    padding: 36px 20px 28px;
+  }
+
+  main {
+    padding: 36px 16px 60px;
+    gap: 24px;
+  }
+
+  main > section {
+    padding: 20px 18px;
+  }
+}
