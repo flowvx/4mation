@@ -89,8 +89,8 @@ echo '<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recherche d\'offres - 4Mation</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/offres.css">
+    <link rel="stylesheet" href="/css/index.css?v=<?= time() ?>">
+    <link rel="stylesheet" href="/css/offres.css?v=<?= time() ?>">
     <style>
         .pagination { display:flex; gap:8px; justify-content:center; margin-top:32px; }
         .pagination a, .pagination span { padding:8px 14px; border-radius:6px; background:var(--surface-2); border:1px solid #333; color:var(--text-muted); font-size:13px; text-decoration:none; }

@@ -59,7 +59,7 @@ if (!empty($errors)) {
 
  
 
-// --- CV (obligatoire) ---
+ 
 $cvPath     = '';
 $lettrePath = null;
 
@@ -69,12 +69,12 @@ try {
     }
     $cvPath = uploadPdf($_FILES['cv'], UPLOAD_CV_DIR);
 
-    // --- Lettre de motivation (optionnelle si rédigée en ligne) ---
+   
     if ($lettreOp === 'upload') {
         if (!empty($_FILES['lettre']['name']) && $_FILES['lettre']['error'] !== UPLOAD_ERR_NO_FILE) {
             $lettrePath = uploadPdf($_FILES['lettre'], UPLOAD_LM_DIR);
         }
-        // Pas de lettre uploadée → on laisse null, la lettre rédigée reste vide
+        
     }
 
 } catch (\RuntimeException $e) {
