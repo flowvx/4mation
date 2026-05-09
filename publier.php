@@ -17,9 +17,9 @@ $metiers     = $pdo->query('SELECT id, nom_metier FROM metiers ORDER BY nom_meti
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publier une offre - 4Mation</title>
-    <link rel="stylesheet" href="css/formulaire.css">
-    <link rel="stylesheet" href="css/admin.css"> 
-    <link rel="stylesheet" href="css/publier.css"> 
+    <link rel="stylesheet" href="/css/formulaire.css?v=<?= time() ?>">
+    <link rel="stylesheet" href="/css/admin.css"> 
+    <link rel="stylesheet" href="/css/publier.css"> 
 </head>
 <body>
 
